@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Idroid' ;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+body{
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+header#cabecalho{
+    margin: 0px;
+    padding: 10px 0 10px 0;
+    background-image: linear-gradient(to top, #1A5C38 10%, #3AD37F);
+}
+header#cabecalho>h1{
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+header#cabecalho>h2{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    font-size: 1em;
+    text-align: center;
+    width: 400px;
+}
+nav#menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+nav#menu li{
+    display: inline;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+nav#menu li:hover{
+    background-color: #36ce7a;
+    border-radius: 3px;
+}
+main, aside{
+    background-color: white;
+    width: 800px;
+    margin: 0px auto 0px auto;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+article>h1{
+    font-family: 'Idroid';
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #1D5E3A;
+    font-size: 1.5em;
+}
+article>h2{
+    font-family: 'Idroid';
+    color: #1D5E3A;
+    font-size: 1em;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, #B8E0C9, white);
+    background-color: #B8E0C9;
+}
+p{
+    text-indent: 20px;
+    padding: 5px;
+    margin: 0px;
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+.fundo-verde{
+    background-color: #1A5C38;
+    padding: 20px;
+    text-align: center;
+}
+.fundo-div-aside{
+    background-color: #B4D6C3;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 3px 3px;
+}
+aside#aparte{
+    background-color: white;
+    width: 800px;
+    margin: 0px auto 20px auto;
+    padding: 10px 10px 0px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    border-radius: 0px 0px 3px 3px;
+}
+section#extras{
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #2FA866;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+section#extras h1{
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    color: white;
+}
+footer{
+    background-color: #1A5C38;
+    color: white;
+}
+footer>p{
+    margin: 0px;
+    text-align: center;
+}

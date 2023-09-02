@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <div>
+        <p>Utilizando a tag <span>&lt;picture&gt;</span> em conjunto com a tag <span>&lt;source&gt;</span></p>
+        <p>Atributos da tag <span>&lt;source&gt;</span></p>
+        <ul>
+            <li><span>media="(max-width: 750px)"</span>: Determina a largura máxima do navegador para poder carregar outra foto.</li>
+            <li><span>srcset="imagens/foto-p.png"</span>: Determina o caminho da imagem.</li>
+            <li><span>type="image/png"</span>: Determina o tipo de arquivo.</li>
+        </ul>
+    </div>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <div>
+        <p>Reproduzindo áudio em HTML5 de maneira simples</p>
+        <p>Atributos da tag &lt;audio&gt;</p>
+        <ul>
+            <li><span>src=""</span>: local de destino</li>
+            <li><span>controls</span>: apresenta os controles do som</li>
+            <li><span>autoplay</span>: inicia automaticamente o audio</li>
+            <li><span>preload</span>: com os valores:</li>
+            <ul>
+                <li><strong>auto</strong>: carrega junto com o carregamento da pagina</li>
+                <li><strong>metada</strong>: carregara somente os dados principais e completara os restante quando apertar o play</li>
+                <li><strong>none</strong>: somente inicia quando apertar o play</li>
+            </ul>
+        </ul>
+        <audio src="media/som2.mp3"  controls></audio>
+        <p>Maneira com várias opções de tentativa de carregamento</p>
+        <audio preload="metadata" controls>
+            <source src="media/som.mp3" type="audio/mpeg">
+            <source src="media/som.ogg" type="audio/ogg">
+            <source src="media/som.wav" type="audio/wav">
+        </audio>
+    </div>
+
+</body>
+</html>

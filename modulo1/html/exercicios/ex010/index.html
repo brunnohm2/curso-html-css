@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <div>
+        <p>Utilizando a tag <span>&lt;a&gt;</span> para acessar outros links.</p>
+        <p>Atributo: <span>href=""</span> para on link do destino.</p>
+        <p>Atributo: <span>target=""</span> para o modo que a o link vai abrir.</p>
+        <ul>
+            <li><strong>_blank</strong>: vai abrir o link em uma nova janela em branco</li>
+            <li><strong>_self</strong>: vai abrir o link na janela ou frame atual (padrão)</li>
+            <li><strong>_parent</strong>: similar ao uso do _top em uma referência à janela mãe</li>
+            <li><strong>_top</strong>: vai desfazer todos os frames e abrir o destino no navegador completo</li>
+        </ul>
+        <p>Atributo: <span>rel=""</span> Existe um recurso bem interessante para links que é indicar qual é a
+            natureza do destino usando o atributo <span>rel</span>. Esse atributo aceita vários
+            valores, entre eles vou citar:
+        </p>
+        <ul>
+            <li><strong>next</strong>: indica que o link é para a próxima parte do documento atual</li>
+            <li><strong>prev</strong>: indica que o link é para a parte anterior do documento atual</li>
+            <li><strong>author</strong>: indica que é um link para o site do autor do artigo atual</li>
+            <li><strong>external</strong>: indica que é um link para outro site que não faz parte do site</li>
+            <li><strong>nofollow</strong>: indica ao mecanismo de busca não seguir o link, usa-se em links de anúncios</li>
+        </ul>
+        <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público no GitHub</a></p>
+        <p>Você pode também acessar o canal <a href="https://www.youtube.com/" target="_blank" rel="nofollow">YouTube</a></p>
+        <code>&lt;a href="https://github.com/gustavoguanabara" target="_blank" rel="external"&gt;</a></code>
+    </div>
+    <h1>Usando links internos</h1>
+    <div>
+        <p>Esta é primeira página do site. Se quiser, pode acessar também a minha <a href="pagina002.html" rel="next">segunda página</a>.</p>
+        <p>Você também pode acessar a página de <a href="noticias/pagina003.html" target="_self">notícias</a></p>
+    </div>
+    <h1>Hiperlinks para Downloads</h1>
+    <div>
+        <ul>
+            <li><strong>download</strong>: define o nome que o arquivo será feito o download</li>
+            <li><strong>type</strong>: define o tipo do arquivo. a lista  tem no site (iana assignments media types)</li>
+        </ul>
+        <ul>
+            <li><a href="livro/livro.pdf" download="livro.pdf" type="application/pdf">Baixar Livro em pdf</a></li>
+            <li><a href="livro/livro.zip" download="zipado.zip" type="application/zip">Livro compactado em zip</a></li>
+        </ul>
+    </div>
+</body>
+</html>
