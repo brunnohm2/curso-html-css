@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root{
+            --cor1: #2D4B73;
+            --cor2: #253C59;
+            --cor3: #99B4BF;
+            --cor4: #D9B70D;
+            --cor5: #BF8D30;
+
+            --texto-shadow1: 1px 1px 1px rgba(0, 0, 0, .5);
+            --texto-shadow2: 1px 1px 1px rgba(255, 255, 255, .5);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor2);
+        }
+        h1{
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+            text-shadow: var(--texto-shadow2);
+        }
+        main{
+            max-width: 550px;
+            margin: 50px auto 10px auto;
+            padding: 5px;
+            background-color: var(--cor5);
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.699);
+        }
+        table{
+            width: 500px;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: auto;
+            box-shadow: 1px 1px 3px black;
+            border-radius: 10px;
+            position: relative;
+        }
+        caption{
+            font-weight: bold;
+            padding: 10px;
+            text-shadow: var(--texto-shadow1);
+            border: 1px solid black;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            background-color: var(--cor2);
+            color: white;
+            box-shadow: 1px 1px 3px black;
+        }
+        th, td{
+            border: 0px solid black;
+            padding: 10px;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -8px;
+            background-color: #253C59;
+        }
+        thead, tfoot{
+            color: var(--cor3);
+            background-color: var(--cor2);
+            text-shadow: var(--texto-shadow1);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .numero{
+            text-align: right;
+        }
+        .centro-direita{
+            border-left: 0px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .centro-esquerda{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .radius-topo-esquerda{
+            border-radius: 10px 0px 0px 0px;
+            border: 1px solid black;
+        }
+        .radius-topo-direita{
+            border-radius: 0px 10px 0px 0px;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .radius-pe-direita{
+            border-radius: 0px 0px 10px 0px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .radius-pe-esquerda{
+            border-radius: 0px 0px 0px 10px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+        p{
+            text-align: justify;
+            text-indent: 20px;
+            padding: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Uso de tabelas grandes</h1>
+        <!-- Anatomia para tabelas grandes -->
+        <!--
+            TABLE
+                THEAD
+                    TR, TD ,TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD ,TH
+         -->
+         <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th class="radius-topo-esquerda" scope="col">Estado</th>
+                    <th class="radius-topo-direita" scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="centro-esquerda">São Paulo</td>
+                    <td class="numero centro-direita">44 420 459</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Minas Gerais</td>
+                    <td class="numero centro-direita">20 538 718</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Rio de Janeiro</td>
+                    <td class="numero centro-direita">16 054 524</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Bahia</td>
+                    <td class="numero centro-direita">14 136 417</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Paraná</td>
+                    <td class="numero centro-direita">11 443 208</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Rio Grande do Sul</td>
+                    <td class="numero centro-direita">10 880 506</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Pernambuco</td>
+                    <td class="numero centro-direita">9 058 155</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Ceará</td>
+                    <td class="numero centro-direita"> 8 791 688</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Pará</td>
+                    <td class="numero centro-direita">8 116 132</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Santa Catarina</td>
+                    <td class="numero centro-direita">7 609 601</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Goiás</td>
+                    <td class="numero centro-direita">7 055 228</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Maranhão</td>
+                    <td class="numero centro-direita">6 775 152</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Paraíba</td>
+                    <td class="numero centro-direita">3 974 495</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Amazonas</td>
+                    <td class="numero centro-direita">3 941 175</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Espírito Santo</td>
+                    <td class="numero centro-direita">3 833 486</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Mato Grosso</td>
+                    <td class="numero centro-direita">3 658 813</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Rio Grande do Norte</td>
+                    <td class="numero centro-direita">3 302 406</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Piauí</td>
+                    <td class="numero centro-direita">3 269 200</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Alagoas</td>
+                    <td class="numero centro-direita">3 127 511</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Distrito Federal</td>
+                    <td class="numero centro-direita">2 817 068</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Mato Grosso do Sul</td>
+                    <td class="numero centro-direita">2 756 700</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Sergipe</td>
+                    <td class="numero centro-direita">2 209 558</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Rondônia</td>
+                    <td class="numero centro-direita">1 581 016</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Tocantins</td>
+                    <td class="numero centro-direita">1 511 459</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Acre</td>
+                    <td class="numero centro-direita">830 026</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Amapá</td>
+                    <td class="numero centro-direita">733 508</td>
+                </tr>
+                <tr>
+                    <td class="centro-esquerda">Roraima</td>
+                    <td class="numero centro-direita">636 303</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" class="radius-pe-esquerda">Total de habitantes</th>
+                    <td class="numero radius-pe-direita"><strong>203 062 512</strong></td>
+                </tr>
+            </tfoot>
+         </table>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illum sint repudiandae repellendus numquam odit nostrum? Maiores aspernatur doloremque nisi dolorem quam! Dolor, veritatis dolore libero praesentium numquam similique eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error corporis reiciendis porro accusantium ab rerum omnis dolor, hic illum nam corrupti labore illo non ratione veritatis quam est quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum rem molestiae optio, nesciunt culpa reprehenderit quos exercitationem nostrum obcaecati pariatur expedita ad eius veritatis cupiditate quas. Sint, nostrum magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit at eos soluta! Veritatis tempore maxime omnis adipisci, sequi minus, quisquam odio rem ipsa aut itaque. Corrupti aut eligendi voluptatibus!</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illum sint repudiandae repellendus numquam odit nostrum? Maiores aspernatur doloremque nisi dolorem quam! Dolor, veritatis dolore libero praesentium numquam similique eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error corporis reiciendis porro accusantium ab rerum omnis dolor, hic illum nam corrupti labore illo non ratione veritatis quam est quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum rem molestiae optio, nesciunt culpa reprehenderit quos exercitationem nostrum obcaecati pariatur expedita ad eius veritatis cupiditate quas. Sint, nostrum magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit at eos soluta! Veritatis tempore maxime omnis adipisci, sequi minus, quisquam odio rem ipsa aut itaque. Corrupti aut eligendi voluptatibus!</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illum sint repudiandae repellendus numquam odit nostrum? Maiores aspernatur doloremque nisi dolorem quam! Dolor, veritatis dolore libero praesentium numquam similique eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error corporis reiciendis porro accusantium ab rerum omnis dolor, hic illum nam corrupti labore illo non ratione veritatis quam est quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum rem molestiae optio, nesciunt culpa reprehenderit quos exercitationem nostrum obcaecati pariatur expedita ad eius veritatis cupiditate quas. Sint, nostrum magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit at eos soluta! Veritatis tempore maxime omnis adipisci, sequi minus, quisquam odio rem ipsa aut itaque. Corrupti aut eligendi voluptatibus!</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illum sint repudiandae repellendus numquam odit nostrum? Maiores aspernatur doloremque nisi dolorem quam! Dolor, veritatis dolore libero praesentium numquam similique eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error corporis reiciendis porro accusantium ab rerum omnis dolor, hic illum nam corrupti labore illo non ratione veritatis quam est quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum rem molestiae optio, nesciunt culpa reprehenderit quos exercitationem nostrum obcaecati pariatur expedita ad eius veritatis cupiditate quas. Sint, nostrum magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit at eos soluta! Veritatis tempore maxime omnis adipisci, sequi minus, quisquam odio rem ipsa aut itaque. Corrupti aut eligendi voluptatibus!</p>
+    </main>
+</body>
+</html>
