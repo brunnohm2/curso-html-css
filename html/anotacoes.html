@@ -16,6 +16,8 @@
                     <li>Capítulo 22</li>
                     <ul>
                         <li>Aula 1</li>
+                        <li>Aula 2</li>
+                        <li>Aula 3</li>
                     </ul>
                 </ul>
             </ul>
@@ -27,8 +29,61 @@
                 <h1>Módulo 4</h1>
                 <h2>Capítulo 22</h2>
                 <h3>Aula 1</h3>
+                <p class="h3-titulo">O Iframe ainda pode ser usado?</p>
+                
                 <h4>O que significa <strong>IFRAME</strong>?</h4>
-                <p>É um Frame Inline "Em português forçado: quadro em linha"</p>
+                <p>É um Frame Inline "Em português forçado: quadro em linha".</p>
+                <p>
+                    A tag utilizada é <code>&lt;iframe src="" frameborder=""&gt;&lt;/iframe&gt;</code>.
+                </p>
+                <p>
+                    Existem sites que não aceitam o uso de <code>iframe</code>. Um exemplo de site que não aceita o uso do <code>iframe</code> é o Google.
+                </p>
+                <h3>Aula 2</h3>
+                <p class="h3-titulo">Configurando iframes</p>
+                <p>
+                    Todo o conteúdo que estiver dentro da tag <code>&lt;iframe src="" frameborder=""&gt;&lt;/iframe&gt;</code> será exibido caso a tag retornar um erro.
+                </p>
+                <p>
+                    Exemplo:
+                    <pre><code class="code-pre">&lt;iframe src="url" frameborder="0"&gt;
+    &lt;a href="url"&gt;link&lt;/a&gt;
+&lt;/iframe&gt;</code></pre>
+                </p>
+                <h4>Parâmetros</h4>
+                <p>
+                   1) <code>width</code> e <code>height</code> tem como padrão os valores <strong>350px</strong> de altura e <strong>150px</strong> de altura respectivamente.
+                </p>
+                <p>
+                    Observação importante: caso definir um valor de altura na tag <code>iframe</code> e outro valor de altura em CSS, as definições em CSS são <strong>soberanas</strong> ao valor atribuido na tag <code>iframe</code>.
+                </p>
+                <p>
+                    2) <code>scrolling</code> aceita 3 valores:
+                    <ul>
+                        <li><code>auto</code>: adiciona barra de rolagem automaticamente;</li>
+                        <li><code>yes</code>: barra de rolagem ativa permanentemente;</li>
+                        <li><code>no</code>: barra de rolagem desativada</li>
+                    </ul>
+                </p>
+                <p>
+                    Existem comportamentos diferente entre os tipos de navegadores com o parâmetro <code>scrolling</code>
+                </p>
+                <p>
+                    3) <code>frameborder</code> aceita somente 2 valores, as configurações de borda se aplica em CSS:
+                    <ul>
+                        <li><code>0</code>: sem borda</li>
+                        <li><code>qualquer outro valor</code>: com borda</li>
+                    </ul>
+                </p>
+                <h3>Aula 3</h3>
+                <p class="h3-titulo">Conteúdo local no iframe</p>
+                <p>
+                    Por padrão o <code>iframe</code> o <code>display</code> é de valor <code>inline</code>. Se for necessário centralizar o <code>iframe</code> no centro da tela, será necessário alterar o <code>display</code> para <code>inline</code> no CSS.
+                </p>
+                <h4>Indexação de conteúdo</h4>
+                <p>
+                    O uso de <strong>iframes</strong> em páginas <strong>torna-se inviável</strong> para a indexação de conteúdo feito pelos <strong>motores de busca</strong>. Quando o motor de busca começa a ler o site e chega no iframe e pula todo o conteúdo contido no arquivo carregado pelo mesmo.
+                </p>
             </article>
         </section>
     </main>
