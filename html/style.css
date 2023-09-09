@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+:root{
+    --cor1: #D9415D;
+    --cor2: #3DBCD9;
+    --cor3: #F2EFBB;
+    --cor4: #F2A950;
+    --cor5: #BF5D39;
+    --cor6: white;
+    --cor7: black;
+
+    --text-indent: 20px;
+    --text-shadow1: 1px 1px 2px rgba(0, 0, 0, .5);
+    --text-shadow2: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    --border-radius1: 5px 22px 5px 22px;
+    --border-radius2: 22px 22px 22px 22px;
+
+    --box-shadow1: 1px 1px 3px rgba(0, 0, 0, .5);
+    --box-shadow2: 1px 1px 3px rgba(255, 255, 255, .5);
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: var(--cor1);
+    padding: 20px;
+}
+main{
+    background-color: var(--cor3);
+    padding: 5px;
+}
+h1{
+    background-color: var(--cor7);
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-indent: var(--text-indent);
+    color: var(--cor3);
+    text-shadow: var(--text-shadow1);
+    border-radius: var(--border-radius1);
+    box-shadow: var(--box-shadow1);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+h2{
+    background-color: var(--cor7);
+    font-size: 1.2em;
+    color: var(--cor3);
+    text-shadow: var(--text-shadow1);
+
+    padding: 5px;
+    border-radius: var(--border-radius2);
+    box-shadow: var(--box-shadow1);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
