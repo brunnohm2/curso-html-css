@@ -18,6 +18,9 @@
                         <li>Aula 1</li>
                         <li>Aula 2</li>
                         <li>Aula 3</li>
+                        <li>Aula 4</li>
+                        <li>Aula 5</li>
+                        <li>Aula 6</li>
                     </ul>
                 </ul>
             </ul>
@@ -28,6 +31,7 @@
             <article>
                 <h1>Módulo 4</h1>
                 <h2>Capítulo 22</h2>
+                
                 <h3>Aula 1</h3>
                 <p class="h3-titulo">O Iframe ainda pode ser usado?</p>
                 
@@ -39,6 +43,8 @@
                 <p>
                     Existem sites que não aceitam o uso de <code>iframe</code>. Um exemplo de site que não aceita o uso do <code>iframe</code> é o Google.
                 </p>
+                
+                
                 <h3>Aula 2</h3>
                 <p class="h3-titulo">Configurando iframes</p>
                 <p>
@@ -62,19 +68,21 @@
                     <ul>
                         <li><code>auto</code>: adiciona barra de rolagem automaticamente;</li>
                         <li><code>yes</code>: barra de rolagem ativa permanentemente;</li>
-                        <li><code>no</code>: barra de rolagem desativada</li>
+                        <li><code>no</code>: barra de rolagem desativada.</li>
                     </ul>
                 </p>
                 <p>
-                    Existem comportamentos diferente entre os tipos de navegadores com o parâmetro <code>scrolling</code>
+                    Existem comportamentos diferente entre os tipos de navegadores com o parâmetro <code>scrolling</code>.
                 </p>
                 <p>
                     3) <code>frameborder</code> aceita somente 2 valores, as configurações de borda se aplica em CSS:
                     <ul>
-                        <li><code>0</code>: sem borda</li>
-                        <li><code>qualquer outro valor</code>: com borda</li>
+                        <li><code>0</code>: sem borda;</li>
+                        <li><code>qualquer outro valor</code>: com borda.</li>
                     </ul>
                 </p>
+                
+                
                 <h3>Aula 3</h3>
                 <p class="h3-titulo">Conteúdo local no iframe</p>
                 <p>
@@ -84,6 +92,52 @@
                 <p>
                     O uso de <strong>iframes</strong> em páginas <strong>torna-se inviável</strong> para a indexação de conteúdo feito pelos <strong>motores de busca</strong>. Quando o motor de busca começa a ler o site e chega no iframe e pula todo o conteúdo contido no arquivo carregado pelo mesmo.
                 </p>
+                
+                
+                <h3>Aula 4</h3>
+                <p class="h3-titulo">Navegação no iframe</p>
+                <h4>Criando links</h4>
+                <p>Para criar links e carregar o arquivo no iframe desejado é necessário atribuir um valor no parâmetro name e no link adicionar o valor no parâmetro target.</p>
+                <p>
+<pre><code class="code-pre">&lt;a href="url" <strong>target="frame"</strong>&gt;Carregar&lt;/a&gt;
+&lt;iframe <strong>name="frame"</strong> src=""&gt;&lt;/iframe&gt;</code></pre>
+                </p>
+                
+                
+                <h3>Aula 5</h3>
+                <p class="h3-titulo">Conteúdo no iframe por código</p>
+                <h4>Carregando Documentos</h4>
+                <p><code>srcdoc</code> pode inserir html dentro para que o iframe exiba o próprio conteúdo.</p>
+                <p><code>&lt;iframe name="frame" srcdoc="&lt;h1&gt;Texto&lt;/h1&gt;"&gt;&lt;/iframe&gt;</code></p>
+                <p>Nesse caso será necessário utilizar <strong>aspas simples</strong> no lugar de aspas duplas se for preciso.</p>
+                
+                
+                <h3>Aula 6</h3>
+                <p class="h3-titulo">Invenientes do iframe</p>
+                <h4>Indexação de motores de busca</h4>
+                <p>
+                    O uso de iframes pode impedir a indexação do conteúdo quando o site for analisado pelo motor de busca. Assim podendo fazer com que haja a desqualificação no seu sistema de buscas.
+                </p>
+                <h4>Acessibilidade do Site</h4>
+                <p>
+                    Softwares para deficientes visuais tem dificuldade com a interpretação do uso de iframes, assim dificultando a usabilidade do site.
+                </p>
+                <h4>Problema com a navegação do site</h4>
+                <p>
+                    Alguns navegadores não conseguem interpretar se dever avançar ou voltar o conteúdo principal, ou do iframe. E o mesmo ocorre com o parâmetro <code>target</code> de valor <code>_blank</code>.
+                </p>
+                <h4>Responsividade</h4>
+                <p>
+                    Caso o conteúdo do site carregado pelo iframe não for responsivo, causara possíveis problemas na exibição de seu conteúdo.
+                </p>
+                <h4>Segurança</h4>
+                <p>
+                    O site carregado pode coletar dados a partir do ifame, permitindo a abertura para técnicas de invasão, como cross-site scripting (XSS).
+                </p>
+                
+                <h3>Aula 6</h3>
+                <p class="h3-titulo">Tornando iframes mais seguros</p>
+                
             </article>
         </section>
     </main>

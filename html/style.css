@@ -96,10 +96,13 @@ h4{
     word-spacing: 0.1em;
     font-size: 1.2em;
     margin-top: 10px;
+    background: linear-gradient(to right, var(--cor3), transparent);
+    border-radius: var(--border-radius1);
+    box-shadow: var(--box-shadow1);
+    border: 1px solid var(--cor4);
 }
 p{
     word-spacing: 0.3em;
-    letter-spacing: 0.1em;
     margin-top: 0.8em;
     text-align: justify;
 }
