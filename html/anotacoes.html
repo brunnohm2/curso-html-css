@@ -21,6 +21,8 @@
                         <li>Aula 4</li>
                         <li>Aula 5</li>
                         <li>Aula 6</li>
+                        <li>Aula 7</li>
+                        <li>Aula 8</li>
                     </ul>
                 </ul>
             </ul>
@@ -108,7 +110,7 @@
                 <p class="h3-titulo">Conteúdo no iframe por código</p>
                 <h4>Carregando Documentos</h4>
                 <p><code>srcdoc</code> pode inserir html dentro para que o iframe exiba o próprio conteúdo.</p>
-                <p><code>&lt;iframe name="frame" srcdoc="&lt;h1&gt;Texto&lt;/h1&gt;"&gt;&lt;/iframe&gt;</code></p>
+                <p><code>&lt;iframe name="frame" srcdoc="<strong>&lt;h1&gt;Texto&lt;/h1&gt;</strong>"&gt;&lt;/iframe&gt;</code></p>
                 <p>Nesse caso será necessário utilizar <strong>aspas simples</strong> no lugar de aspas duplas se for preciso.</p>
                 
                 
@@ -132,12 +134,44 @@
                 </p>
                 <h4>Segurança</h4>
                 <p>
-                    O site carregado pode coletar dados a partir do ifame, permitindo a abertura para técnicas de invasão, como cross-site scripting (XSS).
+                    O site carregado pode coletar dados a partir do ifame, permitindo a abertura para técnicas de invasão, como <strong>Cross-Site scripting (XSS)</strong>.
                 </p>
                 
-                <h3>Aula 6</h3>
+                <h3>Aula 7</h3>
                 <p class="h3-titulo">Tornando iframes mais seguros</p>
-                
+                <h4>Parâmetro sandbox</h4>
+                <p>
+                    Valor <code>sandbox</code>: adiciona nível de segurança mais alto que não deixa coletar nenhum tipo de dado no iframe.
+                </p>
+                <p>
+                    Valor <code>allow-same-origin</code>: permitir conteúdo de mesma origem.
+                </p>
+                <p>
+                    Valor <code>allow-forms</code>: permite formulários.
+                </p>
+                <p>
+                    Valor <code>allow-scripts</code>: permite scripts.
+                </p>
+                <h4>Parâmetro referrerpolicy</h4>
+                <p>
+                    Vem com o valor padrão <code>no-referrer-when-downgrade</code>
+                </p>
+                <p>
+                    Para tornar mais limitado a captura de dados é necessário alterar o valor para <code>no-referrer</code>.
+                </p>
+
+                <h3>Aula 8</h3>
+                <p class="h3-titulo">Dicas para iframes melhores</p>
+                <h4>Vimeo</h4>
+                <p>https://vimeo.com/</p>
+                <h4>Google Maps</h4>
+                <p>https://www.google.com/</p>
+                <h4>Google Documents</h4>
+                <p>Pode compartilhar planilhas, documentos e até apresentações. <strong>Menu Arquivo &gt; Publicar na Web &gt; Incorporar</strong></p>
+
+                <h2>Capítulo 23</h2>
+                <h3>Aula 1</h3>
+                <p class="h3-titulo">Criando um projeto do zero</p>
             </article>
         </section>
     </main>
