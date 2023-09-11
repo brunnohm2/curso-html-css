@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form>label, form> input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="contato.php" method="get" autocomplete="off">
+        <label for="i-nome">Nome</label>
+        <input type="text" name="nome" id="i-nome">
+        
+        <label for="i-sobrenome">Sobrenome</label>
+        <input type="text" name="" id="i-sobrenome">
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
