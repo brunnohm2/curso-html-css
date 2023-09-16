@@ -3,6 +3,10 @@
 
 [Anotações](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
+[Projeto Android](https://brunnohm2.github.io/curso-html-css-projeto-android/)
+
+[Projeto Cordel](https://brunnohm2.github.io/curso-html-css-projeto-cordel/)
+
 ##Aula 21
 
 [Tabela 1](https://brunnohm2.github.io/curso-html-css/html/exercicios/ex023/tabela001.html)
