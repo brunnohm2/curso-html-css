@@ -670,8 +670,70 @@
                 </ul>
 
                 <h3>Aula 3 - <span class="h3-titulo">Criando a página inicial do projeto</span></h3>
-                <p></p>
+                <p>Nesta aula foi implementado as seguintes tarefas:</p>
+                <ul>
+                    <li>Criado o arquivo <strong>index.html</strong></li>
+                    <li>Criado o arquivo <strong>style.css</strong></li>
+                    <li>Inserido as tags main>section#telefone+section#redes-sociais</li>
+                    <li>Algumas definições no arquivo CSS</li>
+                </ul>
+                <p>A tag <code>main</code> ficou definida como <code>position: relative;</code>.</p>
+                <p>A tag <code>section#telefone</code> ficou definida como:</p>
+<pre><code class="code-pre">    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    height: 500px;
+    width: 500px;
+</code></pre>
+                <p>Com essas definições acima, é possível o posicionamento na região central do navegador.</p>
+
+                <h3>Aula 4 - <span class="h3-titulo">Posicionando o conteúdo do site</span></h3>
+                <p>Foram criados os seguintes arquivos:</p>
+                <ul>
+                    <li>home.html</li>
+                </ul>
+                <p>Regras CSS definidas para home.html:</p>
+<pre><code class="code-pre">*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black url('imagens/tela-home.jpg') no-repeat top center;
+    background-size: cover;
+}
+</code></pre>
+                <p>No index.html foi inserido um <code>iframe</code> com <code>id=tela</code> e <code>name=tela</code> dentro de <code>section#telefone</code> e foram definidas as seguintes regras de CSS em style.css:</p>
+<pre><code class="code-pre">iframe{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+</code></pre>
+
+                <h3>Aula 5 - <span class="h3-titulo">Criando os botões para redes sociais</span></h3>
+                <p>Em <code>section#redes-sociais</code> foram inserida as imagens de logo das redes sociais e o link do endereço delas, após isso foram definidas algumas regras CSS no arquivo <strong>style.css</strong></p>
+<pre><code class="code-pre">section#redes-sociais{
+    text-align: right;    
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+section#redes-sociais  img:hover{
+    border: 2px solid rgba(255,255,255, .6)
+    transform: translate(-3px, -3px);
+    transition: transform .3s;
+}
+</code></pre>
             </article>
         </section>
     </main>
