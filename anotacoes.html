@@ -744,10 +744,12 @@ section#redes-sociais  img:hover{
     margin: 0px;
     padding: 0px;
 }
+<strong class="enfase">
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;
 }
+</strong>
 a{
     display: block;
     background-color: darkred;
@@ -765,8 +767,109 @@ img{
                 <p><code>::-webkit-scrollbar</code> com  <code>width: 0px;</code> e <code>height: 0px;</code> a barra lateral ficará invisível.</p>
                 <h3>Aula 7 - <span class="h3-titulo">Personalizando as imagens do projeto</span></h3>
                 <p>As imagens compridas usando Gimp</p>
+
+                
                 <h2>Capítulo 24 - Formulários</h2>
                 <h3>Aula 1 - <span class="h3-titulo">Como criar formulários com HTML</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form001.html.</p>
+                <p>Nesta aula foi inserido o código html para formulário:</strong></p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot;&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Caso as sugestões de preenchimento automático do formulário nao for necessária, usa-se o complemento autocomplete="off".</p>
+<pre><code class="code-pre">&lt;form <strong class="enfase">autocomplete=&quot;off&quot;</strong>&gt;
+&lt;/form&gt;</code></pre>
+
+                <h3>Aula 2 - <span class="h3-titulo">Usar label vai melhorar seus formulários</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form001.html.</p>
+                <p>Nesta aula iremos usar a tag <code>label</code> se ligar com a tag <code>input</code> correlacionada ainda no ex025 form001.html</p>
+<pre><code class="code-pre">&lt;label <strong class="enfase">for=&quot;i-nome&quot;</strong>&gt;Nome&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;nome&quot; <strong class="enfase">id=&quot;i-nome&quot;</strong>&gt;</code></pre>
+
+                <h3>Aula 3 - <span class="h3-titulo">Métodos GET e POST para formulários</span></h3>
+                <p>Em HTML5 existem dois métodos de envio de formulário, o método <code>get</code> e <code>post</code>.</p>
+                <p>Por padrao o método <code>get</code> é o método padrao de envio do formulário.</p>
+                <p>Quando usar os métodos GET e POST?</p>
+                <p>GET - Quando os dados requisitados não for sensíveis e podem ser compartilháveis. Esse método não pode passar 3.000 bytes ou aproximadamente 3.000 letras.</p>
+                <p>POST - Quando os dados for sensíveis como senhas, dados de cartões de créditos, arquivos grandes.</p>
+
+                <h3>Aula 4 - <span class="h3-titulo">Criando caixas de textos e de senha</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form002.html e contato.php.</p>
+                <p>O código abaixo está com o método GET, mesmo que o input de senha não seja exibida na tela, após o envio do formulário, os caracteres da senha serão exibidos na url do navegador.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; <strong class="enfase">method=&quot;GET&quot;</strong>&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot;&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot;&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Abaixo está no formato de envio POST, assim os dados de senha não ficará explicito na url do navegador após o envio do formulário, porém ainda é possível obter os dados de senha através do DevTools do navegador.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; <strong class="enfase">method=&quot;POST&quot;&gt;</strong>
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot;&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot;&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Atributo <code>required</code>, comando de preenchimento obrigatório.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; <strong class="enfase">required</strong>&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">required</strong>&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Atributo <code>minlength</code> e <code>maxlength</code>, determina o número mínimo e máximo de caracteres respectivamente.</p>
+
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; required <strong class="enfase">minlength=&quot;5&quot; maxlength=&quot;15&quot;</strong>&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; required <strong class="enfase">minlength=&quot;8&quot; maxlength=&quot;20&quot;</strong>&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Atributo <code>size</code>, aumenta o tamanho da caixa com a quantidade de caracteres correspondente.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; required minlength=&quot;5&quot; maxlength=&quot;15&quot; <strong class="enfase">size=&quot;10&quot;</strong>&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; required minlength=&quot;8&quot; maxlength=&quot;20&quot; <strong class="enfase">size=&quot;8&quot;</strong>&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Atributo <code>placeholder</code>, insere uma dica de preenchimento no campo do formulário.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; <strong class="enfase">placeholder=&quot;Nome de Usu&aacute;rio&quot;</strong>&gt;
+    
+    &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">placeholder=&quot;Senha&quot;</strong>&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
+&lt;/form&gt;</code></pre>
             </article>
         </section>
     </main>

@@ -16,14 +16,15 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="contato.php" method="get" autocomplete="off">
+    <form action="contato.php" method="POST">
         <label for="i-nome">Nome</label>
-        <input type="text" name="nome" id="i-nome">
+        <input type="text" name="nome" id="i-nome" required minlength="5" maxlength="15" size="15" placeholder="Nome de Usuário">
         
-        <label for="i-sobrenome">Sobrenome</label>
-        <input type="text" name="" id="i-sobrenome">
+        <label for="i-senha">Senha</label>
+        <input type="password" name="senha" id="i-senha" required minlength="8" maxlength="20" size="8" placeholder="Senha">
         
         <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>

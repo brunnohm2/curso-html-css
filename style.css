@@ -185,6 +185,12 @@ code{
     font-family: var(--font-family2);
     font-size: 0.7em;
 }
+.enfase{
+    color: crimson;
+}
+.exercicio{
+    color: var(--cor1);
+}
 pre{
     background-color: var(--cor7);
     border: 1px dotted silver;
