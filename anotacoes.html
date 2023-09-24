@@ -704,7 +704,9 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: black url('imagens/tela-home.jpg') no-repeat top center;
+    background: black
+                url('imagens/tela-home.jpg') 
+                no-repeat top center;
     background-size: cover;
 }
 </code></pre>
@@ -838,10 +840,24 @@ img{
 
 <pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
     &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; required <strong class="enfase">minlength=&quot;5&quot; maxlength=&quot;15&quot;</strong>&gt;
+    &lt;input 
+        type=&quot;text&quot; 
+        name=&quot;nome&quot; 
+        id=&quot;i-nome&quot; 
+        required 
+        <strong class="enfase">minlength=&quot;5&quot; 
+        maxlength=&quot;15&quot;</strong>
+    &gt;
     
     &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; required <strong class="enfase">minlength=&quot;8&quot; maxlength=&quot;20&quot;</strong>&gt;
+    &lt;input
+        type=&quot;password&quot; 
+        name=&quot;senha&quot; 
+        id=&quot;i-senha&quot; 
+        required 
+        <strong class="enfase">minlength=&quot;8&quot; 
+        maxlength=&quot;20&quot;</strong>
+    &gt;
     
     &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
     &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
@@ -850,10 +866,26 @@ img{
                 <p>Atributo <code>size</code>, aumenta o tamanho da caixa com a quantidade de caracteres correspondente.</p>
 <pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
     &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; required minlength=&quot;5&quot; maxlength=&quot;15&quot; <strong class="enfase">size=&quot;10&quot;</strong>&gt;
+    &lt;input
+        type=&quot;text&quot; 
+        name=&quot;nome&quot; 
+        id=&quot;i-nome&quot; 
+        required 
+        minlength=&quot;5&quot; 
+        maxlength=&quot;15&quot; 
+        <strong class="enfase">size=&quot;10&quot;</strong>
+    &gt;
     
     &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; required minlength=&quot;8&quot; maxlength=&quot;20&quot; <strong class="enfase">size=&quot;8&quot;</strong>&gt;
+    &lt;input 
+        type=&quot;password&quot; 
+        name=&quot;senha&quot; 
+        id=&quot;i-senha&quot; 
+        required 
+        minlength=&quot;8&quot; 
+        maxlength=&quot;20&quot; 
+        <strong class="enfase">size=&quot;8&quot;</strong>
+    &gt;
     
     &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
     &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
@@ -862,10 +894,20 @@ img{
                 <p>Atributo <code>placeholder</code>, insere uma dica de preenchimento no campo do formulário.</p>
 <pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot;&gt;
     &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; <strong class="enfase">placeholder=&quot;Nome de Usu&aacute;rio&quot;</strong>&gt;
+    &lt;input 
+        type=&quot;text&quot; 
+        name=&quot;nome&quot; 
+        id=&quot;i-nome&quot; 
+        <strong class="enfase">placeholder=&quot;Nome de Usu&aacute;rio&quot;</strong>
+    &gt;
     
     &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">placeholder=&quot;Senha&quot;</strong>&gt;
+    &lt;input 
+        type=&quot;password&quot; 
+        name=&quot;senha&quot; 
+        id=&quot;i-senha&quot; 
+        <strong class="enfase">placeholder=&quot;Senha&quot;</strong>
+    &gt;
     
     &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
     &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
@@ -875,10 +917,16 @@ img{
 
 <pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;POST&quot; <strong class="enfase">autocomplete=&quot;on&quot;</strong>&gt;
     &lt;label for=&quot;i-nome&quot;&gt;Nome&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;nome&quot; id=&quot;i-nome&quot; <strong class="enfase">autocomplete=&quot;username&quot;&gt;</strong>
+    &lt;input 
+        type=&quot;text&quot; 
+        <strong class="enfase">autocomplete=&quot;username&quot;</strong>
+    &gt;
     
     &lt;label for=&quot;i-senha&quot;&gt;Senha&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">autocomplete=&quot;new-password&quot;&gt;</strong>
+    &lt;input 
+        type=&quot;password&quot; 
+        <strong class="enfase">autocomplete=&quot;new-password&quot;</strong>
+    &gt;
     
     &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
     &lt;input type=&quot;reset&quot; value=&quot;Limpar&quot;&gt;
@@ -886,14 +934,31 @@ img{
 
                 <p>Para campos de senha existem os valores de <code>autocomplete</code>, <code>current-password</code> e <code>new-password</code></p>
                 <p>Para digitar uma nova senha:</p>
-                <pre><code class="code-pre">&lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">autocomplete=&quot;new-password&quot;&gt;</strong></code></pre>
+                <pre><code class="code-pre">&lt;input 
+    type=&quot;password&quot; 
+    name=&quot;senha&quot; 
+    id=&quot;i-senha&quot; 
+    <strong class="enfase">autocomplete=&quot;new-password&quot;</strong>
+&gt;</code></pre>
                 <p>Para inserir uma senha gravada no navegador:</p>
-                <pre><code class="code-pre">&lt;input type=&quot;password&quot; name=&quot;senha&quot; id=&quot;i-senha&quot; <strong class="enfase">autocomplete=&quot;current-password&quot;&gt;</strong></code></pre>
+                <pre><code class="code-pre">&lt;input 
+    type=&quot;password&quot; 
+    name=&quot;senha&quot; 
+    id=&quot;i-senha&quot; 
+    <strong class="enfase">autocomplete=&quot;current-password&quot;</strong>
+&gt;</code></pre>
 
                 <h3>Aula 5 - <span class="h3-titulo">Elementos number, month, date e time em formulários HTML</span></h3>
                 <p class="exercicio">Exercício 25 &gt; form003.html.</p>
                 <p>Elemento <code>number</code>. Aceita valores numéricos, ponto, virgula, e traço.</p>
-<pre><code class="code-pre">&lt;input <strong class="enfase">type=&quot;number&quot;</strong> name=&quot;media&quot; id=&quot;i-media&quot; <strong class="enfase">min=&quot;0&quot; max=&quot;10&quot;</strong> placeholder=&quot;0 a 10&quot; <strong class="enfase">step=&quot;0.5&quot;</strong>&gt;</code></pre>
+<pre><code class="code-pre">&lt;input
+     <strong class="enfase">type=&quot;number&quot;</strong>
+     name=&quot;media&quot; 
+     id=&quot;i-media&quot; 
+     <strong class="enfase">min=&quot;0&quot; max=&quot;10&quot;</strong> 
+     placeholder=&quot;0 a 10&quot; <strong class="enfase">
+     step=&quot;0.5&quot;</strong>
+&gt;</code></pre>
             </article>
         </section>
     </main>
