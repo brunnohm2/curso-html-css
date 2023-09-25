@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Exercício 25 Form004</title>
+    <style>
+        label, input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="contato.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="i-email">E-mail:</label>
+            <input
+                type="email"
+                name="email"
+                id="i-email"
+                autocomplete="email"
+                required
+            >
+            
+            <label for="i-telefone1">Telefone 1:</label>
+            <input
+            type="tel"
+            name="telefone1"
+            id="i-telefone1"
+            required
+            autocomplete="tel"
+            pattern="^[0-9]{4,5}-[0-9]{4,5}$"
+            placeholder="0000-00000"
+            >
+            
+            <label for="i-telefone2">Telefone 2:</label>
+            <input
+                type="tel"
+                name="telefone2"
+                id="i-telefone2"
+                required
+                autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"
+                placeholder="(00)00000-00000"
+            >
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+</body>
+</html>

@@ -959,6 +959,162 @@ img{
      placeholder=&quot;0 a 10&quot; <strong class="enfase">
      step=&quot;0.5&quot;</strong>
 &gt;</code></pre>
+
+                <p>Elemento <code>month</code>, para preenchimento referente aos meses.</p>
+<pre><code class="code-pre">&lt;input 
+    <strong class="enfase">type=&quot;month&quot; </strong>
+    name=&quot;mes&quot; 
+    id=&quot;i-mes&quot;
+    value=&quot;2023-09&quot;
+&gt;</code></pre>
+
+                <p>Elemento <code>date</code>, controle para dia, mês e ano</p>
+<pre><code class="code-pre">&lt;input <strong class="enfase">type=&quot;date&quot;</strong> name=&quot;data&quot; id=&quot;i-data&quot;&gt;</code></pre>
+
+                <p>Elemento <code>time</code>, controle de hora</p>
+                <pre><code class="code-pre">&lt;input <strong class="enfase">type=&quot;time&quot;</strong> name=&quot;hora&quot; id=&quot;i-hora&quot;&gt;</code></pre>
+
+                <h3>Aula 6 - <span class="h3-titulo">Compatibilidade com navegadores</span></h3>
+                <p>Nesta aula foi testado a compatibilidade dos formulários em diversos navegadores.</p>
+
+                <h3>Aula 7 - <span class="h3-titulo">Formulários com telefone e e-mail</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form004.html.</p>
+                <p>Elemento <code>email</code>, elemento dedicado para preenchimento de e-mail.</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;email&quot; </strong>
+    name=&quot;email&quot; 
+    id=&quot;i-email&quot; 
+    autocomplete=&quot;email&quot;
+    required
+&gt;</code></pre>
+
+                <p>Elemento <code>tel</code>, para preenchimento de telefone</p>
+                <p>Em <code>pattern</code> coloca-se expressões regulares. Para mais informações, pesquisar por RegEx.</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;tel&quot;</strong>
+    name=&quot;telefone&quot;
+    id=&quot;i-telefone&quot;
+    required
+    autocomplete=&quot;tel&quot;
+    <strong class="enfase">pattern=&quot;^[0-9]{4,5}-[0-9]{4,5}$&quot;</strong>
+&gt;</code></pre>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;tel&quot;</strong>
+    name=&quot;telefone&quot;
+    id=&quot;i-telefone&quot;
+    required
+    autocomplete=&quot;tel&quot;
+    <strong class="enfase">pattern=&quot;^\(\d{2}\)-\d{4,5}-\d{4,5}$&quot;</strong>
+&gt;</code></pre>
+
+                <p>^ indica o inicio da expressão regular</p>
+                <p>$ indica o final da expressão regular</p>
+                <p>[0-9] indica números de 0 à 9</p>
+                <p>{4,5} indica de 4 à 5 dígitos</p>
+                <p>\d{2} significa dois dígitos</p>
+
+                <p><code>fieldset</code> e <code>legend</code>, agrupamento de campos</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot; autocomplete=&quot;on&quot;&gt;
+    <strong class="enfase">&lt;fieldset&gt;</strong>
+        <strong class="enfase">&lt;legend&gt;Dados Pessoais&lt;/legend&gt;</strong>
+        &lt;label for=&quot;i-email&quot;&gt;E-mail:&lt;/label&gt;
+        &lt;input
+            type=&quot;email&quot;
+            name=&quot;email&quot;
+            id=&quot;i-email&quot;
+            autocomplete=&quot;email&quot;
+            required
+        &gt;
+        
+        &lt;label for=&quot;i-telefone1&quot;&gt;Telefone 1:&lt;/label&gt;
+        &lt;input
+            type=&quot;tel&quot;
+            name=&quot;telefone1&quot;
+            id=&quot;i-telefone1&quot;
+            required
+            autocomplete=&quot;tel&quot;
+            pattern=&quot;^[0-9]{4,5}-[0-9]{4,5}$&quot;
+            placeholder=&quot;0000-00000&quot;
+        &gt;
+        
+        &lt;label for=&quot;i-telefone2&quot;&gt;Telefone 2:&lt;/label&gt;
+        &lt;input
+            type=&quot;tel&quot;
+            name=&quot;telefone2&quot;
+            id=&quot;i-telefone2&quot;
+            required
+            autocomplete=&quot;tel&quot;
+            pattern=&quot;^\(\d{2}\)\d{4,5}-\d{4,5}$&quot;
+            placeholder=&quot;(00)00000-00000&quot;
+        &gt;
+    <strong class="enfase">&lt;/fieldset&gt;</strong>
+
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Apagar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <h3>Aula 8 - <span class="h3-titulo">Checkbox e radio button em HTML</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form005.html</p>
+                <p><code>radio</code>, somente uma opção pode ser marcada.</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;radio&quot;</strong> 
+    name=&quot;sexo&quot; 
+    id=&quot;i-masculino&quot;
+&gt; 
+&lt;label for=&quot;i-masculino&quot;&gt;Masculino&lt;/label&gt;      
+
+&lt;br&gt;
+
+&lt;input 
+    <strong class="enfase">type=&quot;radio&quot;</strong> 
+    name=&quot;sexo&quot; 
+    id=&quot;i-feminino&quot;
+    <strong class="enfase">checked</strong>
+&gt;
+&lt;label for=&quot;i-feminino&quot;&gt;Feminino&lt;/label&gt;</code></pre>
+
+                <p><code>checkbox</code>, várias opções podem ser escolhidas</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;checkbox&quot; </strong>
+    name=&quot;basquete&quot; 
+    id=&quot;i-basquete&quot;
+&gt;
+&lt;label for=&quot;i-basquete&quot;&gt;Basquete&lt;/label&gt;
+&lt;br&gt;
+
+&lt;input 
+    <strong class="enfase">type=&quot;checkbox&quot; </strong>
+    name=&quot;futebol&quot; 
+    id=&quot;i-futebol&quot;
+    <strong class="enfase">checked</strong>
+&gt;
+&lt;label for=&quot;i-futebol&quot;&gt;Futebol&lt;/label&gt;
+&lt;br&gt;
+
+&lt;input 
+    <strong class="enfase">type=&quot;checkbox&quot; </strong>
+    name=&quot;natacao&quot; 
+    id=&quot;i-natacao&quot;
+&gt;
+&lt;label for=&quot;i-natacao&quot;&gt;Nata&ccedil;&atilde;o&lt;/label&gt;
+&lt;br&gt;
+
+&lt;input 
+    <strong class="enfase">type=&quot;checkbox&quot; </strong>
+    name=&quot;tenis&quot; 
+    id=&quot;i-tenis&quot;
+&gt;
+&lt;label for=&quot;i-tenis&quot;&gt;T&ecirc;nis&lt;/label&gt;</code></pre>
+
+                <h3>Aula 9 - <span class="h3-titulo">Elementos color, range e file em HTML</span></h3>
+                <p>Elemento <code>color</code>, faz a seleção da cor desejada através de uma caixa de texto.</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;color&quot;</strong>
+    name=&quot;cor&quot;
+    id=&quot;i-cor&quot;
+&gt;</code></pre>
+
+                <p>Elemento <code>range</code>, </p>
             </article>
         </section>
     </main>
