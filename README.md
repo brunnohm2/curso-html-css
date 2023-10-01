@@ -20,7 +20,7 @@ Site elaborado para apresentar a poesia "Cordel Moderno - Tecnologia do agora" d
 
 [Projeto Social](https://brunnohm2.github.io/curso-html-css-projeto-social/)
 
-##Aula 21
+## Aula 21
 
 [Tabela 1](https://brunnohm2.github.io/curso-html-css/html/exercicios/ex023/tabela001.html)
 
