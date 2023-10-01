@@ -1,5 +1,9 @@
-# curso-html-css
- Curso de Html e Css do Professor Gustavo Guanabara
+#Curso de HTML5 e CSS3 ministrado pelo Professor Gustavo Guanabara.
+
+Este curso feito em vídeo-aulas através do site [YouTube](https://www.youtube.com), mas se por ventura for necessário a emissão de Certificado, será preciso se cadastrar no site [Curso em Vídeo](https://www.cursoemvideo.com/).
+
+
+
 
 [Anotações](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
