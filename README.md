@@ -2,6 +2,15 @@
 
 Este curso feito em vídeo-aulas através do site [YouTube](https://www.youtube.com/@CursoemVideo), mas se por ventura for necessário a emissão de Certificado, será preciso se cadastrar no site [Curso em Vídeo](https://www.cursoemvideo.com/).
 
+O curso completo de HTML5 E CSS3 é dividido em 5 módulos.
+
+Meu progresso do curso:
+-[x] Módulo 1
+-[x] Módulo 2
+-[x] Módulo 3
+-[x] Módulo 4
+-[] Módulo 5
+
 
 ## Anotações
 Aqui deixo algumas anotações sobre o curso conforme vou estudando. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
