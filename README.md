@@ -14,7 +14,7 @@ Meu progresso do curso:
 
 ## Anotações :books:
 > [!NOTE]
-> Aqui deixo algumas anotações sobre o curso. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
+> Aqui deixo algumas anotações sobre o curso. Conforme me desenvolvo no curso, vou fazendo melhorias do mesmo.
 
 [Link](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
