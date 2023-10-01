@@ -1114,7 +1114,56 @@ img{
     id=&quot;i-cor&quot;
 &gt;</code></pre>
 
-                <p>Elemento <code>range</code>, </p>
+                <p>Elemento <code>range</code>, adiciona uma barra gráfica onde pode selecionar de forma progressiva o valor do elemento.</p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;range&quot;</strong>
+    name=&quot;range&quot;
+    id=&quot;i-range&quot;
+    value=&quot;2&quot;
+    min=&quot;0&quot;
+    max=&quot;10&quot;
+&gt;</code></pre>
+
+                <p>Elemento <code>file</code>, elemento que permite enviar aquivos através do formulário.</p>
+                <p>Só é permitido enviar arquivos por esse elemento através do método <strong>POST</strong></p>
+<pre><code class="code-pre">&lt;input
+    <strong class="enfase">type=&quot;file&quot;</strong> 
+    name=&quot;arquivo&quot; 
+    id=&quot;i-aquivo&quot;
+&gt;</code></pre>
+
+                <h3>Aula 10 - <span class="h3-titulo">Select datalist e textarea em HTML</span></h3>
+                <p>Elemento <code>select</code>, usado para selecionar uma lista de valores pre-selecionados. O elemento <code>select</code> é usado junto com <code>option</code>.</p>
+<pre><code class="code-pre">&lt;select name=&quot;Estado&quot; id=&quot;i-estado&quot;&gt;
+    &lt;optgroup label=&quot;Regi&atilde;o Norte&quot;&gt;
+        &lt;option value=&quot;AC&quot;&gt;Acre&lt;/option&gt;
+        &lt;option value=&quot;AM&quot;&gt;Amazonas&lt;/option&gt;
+        &lt;option value=&quot;AP&quot;&gt;Amap&aacute;&lt;/option&gt;
+        &lt;option value=&quot;TO&quot;&gt;Tocantins&lt;/option&gt;
+        &lt;option value=&quot;PA&quot;&gt;Par&aacute;&lt;/option&gt;
+        &lt;option value=&quot;RR&quot;&gt;Roraima&lt;/option&gt;
+        &lt;option value=&quot;RO&quot;&gt;Rond&ocirc;nia&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+
+                <p>Tag <code>datalist</code>, é usado para sugerir uma lista para ajudar no preenchimento do campo <code>input:text</code></p>
+<pre><code class="code-pre">&lt;label for=&quot;i-profissao&quot;&gt;Profiss&atilde;o com value:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;profissao&quot; id=&quot;i-profissao&quot; <strong class="enfase">list=&quot;lista-profissao&quot;</strong>&gt;
+    &lt;<strong class="enfase">datalist id=&quot;lista-profissao&quot;</strong>&gt;
+        &lt;option value=&quot;ADM&quot;&gt;Administrador&lt;/option&gt;
+        &lt;option value=&quot;ADV&quot;&gt;Advogado&lt;/option&gt;
+        &lt;option value=&quot;MED&quot;&gt;M&eacute;dico&lt;/option&gt;
+        &lt;option value=&quot;VTN&quot;&gt;Veterin&aacute;rio&lt;/option&gt;
+    &lt;<strong class="enfase">/datalist</strong>&gt;
+
+    &lt;label for=&quot;i-profissao2&quot;&gt;Profiss&atilde;o sem value:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;profissao2&quot; id=&quot;i-profissao2&quot; <strong class="enfase">list=&quot;lista-profissao2&quot;</strong>&gt;
+    &lt;<strong class="enfase">datalist id=&quot;lista-profissao2&quot;</strong>&gt;
+        &lt;option&gt;Administrador&lt;/option&gt;
+        &lt;option&gt;Advogado&lt;/option&gt;
+        &lt;option&gt;M&eacute;dico&lt;/option&gt;
+        &lt;option&gt;Veterin&aacute;rio&lt;/option&gt;
+    &lt;<strong class="enfase">/datalist</strong>&gt;</code></pre>
             </article>
         </section>
     </main>
