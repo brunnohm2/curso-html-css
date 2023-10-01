@@ -276,7 +276,7 @@
                                 <li>Aula 8 - Checkbox e radio button em HTML</li>
                                 <li>Aula 9 - Elementos color, range e file em HTML</li>
                                 <li>Aula 10 - Select datalist e textarea em HTML</li>
-                                <li>Aula 11 - Elementos output em formulários HTML</li>
+                                <li>Aula 11 - Elemento output em formulários HTML</li>
                             </ul>
                         </li>
                     </ul>
@@ -1164,6 +1164,92 @@ img{
         &lt;option&gt;M&eacute;dico&lt;/option&gt;
         &lt;option&gt;Veterin&aacute;rio&lt;/option&gt;
     &lt;<strong class="enfase">/datalist</strong>&gt;</code></pre>
+
+                <h3>Aula 11 - <span class="h3-titulo">Elemento output em formulários HTML</span></h3>
+                <p>Tag <code>output</code>, usada apenas para apresentar saídas de informações, ao efetuar o envio do formulário o seu conteúdo não será anexado.</p>
+                <p>Geralmente usa-se a linguagem de programação JavaScript para manipular os valores apresentados no <code>output</code>.</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot;&gt;
+    &lt;label for=&quot;iNumero1&quot;&gt;N&uacute;mero 1:&lt;/label&gt;
+    &lt;input
+        type=&quot;number&quot; 
+        name=&quot;numero1&quot; 
+        <strong class="enfase">id=&quot;iNumero1&quot; </strong>
+        required 
+        min=&quot;0&quot; 
+        max=&quot;50&quot;
+        value=&quot;0&quot;
+        <strong class="enfase">oninput=&quot;iSoma.innerHTML = Number(iNumero.value) + Number(iNumero2.value)&quot;</strong>
+    &gt;
+
+    &lt;label for=&quot;iNumero2&quot;&gt;N&uacute;mero 2:&lt;/label&gt;
+    &lt;input
+        type=&quot;number&quot; 
+        name=&quot;numero2&quot; 
+        <strong class="enfase">id=&quot;iNumero2&quot; </strong>
+        required 
+        min=&quot;0&quot; 
+        max=&quot;50&quot;
+        value=&quot;0&quot;
+        <strong class="enfase">oninput=&quot;iSoma.innerHTML = Number(iNumero1.value) + Number(iNumero2.value)&quot;</strong>
+    &gt;
+
+    &lt;label for=&quot;iSoma&quot;&gt;Soma:&lt;/label&gt;
+    &lt;output name=&quot;soma&quot; <strong class="enfase">id=&quot;iSoma&quot</strong>;&gt;0&lt;/output&gt;
+
+    &lt;input type=&quot;reset&quot; value=&quot;Apagar&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Relacionando <code>output</code> com <code>input:range</code>, <code>input:reset</code> e programação JavaScript:</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot;&gt;
+    &lt;label for=&quot;iNumero&quot;&gt;N&uacute;mero:&lt;/label&gt;
+    &lt;input
+        <strong class="enfase">type=&quot;range&quot;</strong>
+        name=&quot;numero&quot;
+        id=&quot;iNumero&quot;
+        min=&quot;0&quot;
+        max=&quot;10&quot;
+        value=&quot;0&quot;
+        <strong class="enfase">oninput=&quot;iSaida.innerHTML = Number(iNumero.value)&quot;</strong>
+        step=&quot;.5&quot;
+    &gt;
+
+    &lt;label for=&quot;iSaida&quot;&gt;N&uacute;mero:&lt;/label&gt;
+    &lt;output name=&quot;saida&quot; <strong class="enfase">id=&quot;iSaida&quot;</strong>&gt;0&lt;/output&gt;
+
+    &lt;input type=&quot;reset&quot; value=&quot;Apagar&quot; <strong class="enfase">onclick=&quot;iSaida.innerHTML = 0&quot;</strong>&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+                <p>Outro exemplo:</p>
+<pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot;&gt;
+    &lt;label for=&quot;iAno&quot;&gt;Em que ano voc&ecirc; nasceu:&lt;/label&gt;
+    &lt;input
+        type=&quot;number&quot;
+        name=&quot;ano&quot;
+        id=&quot;iAno&quot;
+        min=&quot;1900&quot;
+        max=&quot;2023&quot;
+        <strong class="enfase">oninput=&quot;calcIdade()&quot;</strong>
+    &gt;
+
+    &lt;output name=&quot;idade&quot; <strong class="enfase">id=&quot;iIdade&quot;</strong>&gt;Inserir ano de nascimento para calcular idade&lt;/output&gt;
+    &lt;input
+        type=&quot;reset&quot;
+        value=&quot;Apagar&quot; 
+        <strong class="enfase">onclick=&quot;iIdade.innerHTML=&rsquo;Inserir ano de nascimento&rsquo;&quot;</strong>
+    &gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+<strong class="enfase">
+&lt;script&gt;
+    function calcIdade(){
+        let anoAtual = new Date().getFullYear()
+        iIdade.innerHTML = Number(anoAtual) - Number(iAno.value)
+        iIdade.innerHTML += &rsquo; anos&rsquo;
+    }
+&lt;/script&gt;
+</strong></code></pre>
             </article>
         </section>
     </main>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulário 008</title>
+    <style>
+        form>input{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 11 - Elementos output em formulários HTML (Parte 1)</h1>
+    <form action="contato.php" method="get">
+        <label for="iNumero1">Número 1:</label>
+        <input
+            type="number" 
+            name="numero1" 
+            id="iNumero1" 
+            required 
+            min="0" 
+            max="50"
+            value="0"
+            oninput="iSoma.innerHTML = Number(iNumero.value) + Number(iNumero2.value)"
+        >
+
+        <label for="iNumero2">Número 2:</label>
+        <input
+            type="number" 
+            name="numero2" 
+            id="iNumero2" 
+            required 
+            min="0" 
+            max="50"
+            value="0"
+            oninput="iSoma.innerHTML = Number(iNumero1.value) + Number(iNumero2.value)"
+        >
+
+        <label for="iSoma">Soma:</label>
+        <output name="soma" id="iSoma">0</output>
+
+        <input type="reset" value="Apagar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

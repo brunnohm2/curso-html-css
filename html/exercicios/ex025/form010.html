@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulário 010</title>
+    <style>
+        form>input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 11 - Elemento output em formulários HTML (Parte 3)</h1>
+    <form action="contato.php" method="get">
+        <label for="iAno">Em que ano você nasceu:</label>
+        <input
+            type="number"
+            name="ano"
+            id="iAno"
+            min="1900"
+            max="2023"
+            oninput="calcIdade()"
+        >
+
+        <output name="idade" id="iIdade">Inserir ano de nascimento para calcular idade</output>
+        <input
+            type="reset"
+            value="Apagar" 
+            onclick="iIdade.innerHTML='Inserir ano de nascimento'"
+        >
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function calcIdade(){
+            let anoAtual = new Date().getFullYear()
+            iIdade.innerHTML = Number(anoAtual) - Number(iAno.value)
+            iIdade.innerHTML += ' anos'
+        }
+    </script>
+</body>
+</html>

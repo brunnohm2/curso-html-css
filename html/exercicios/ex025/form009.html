@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulário 009</title>
+    <style>
+        form>input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 11 - Elementos output em formulários HTML (Parte 2)</h1>
+    <form action="contato.php" method="get">
+        <label for="iNumero">Número:</label>
+        <input
+            type="range"
+            name="numero"
+            id="iNumero"
+            min="0"
+            max="10"
+            value="0"
+            oninput="iSaida.innerHTML = Number(iNumero.value)"
+            step=".5"
+        >
+
+        <label for="iSaida">Número:</label>
+        <output name="saida" id="iSaida">0</output>
+
+        <input type="reset" value="Apagar" onclick="iSaida.innerHTML = 0">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
