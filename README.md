@@ -1,6 +1,6 @@
 # Curso de HTML5 e CSS3 ministrado pelo Professor Gustavo Guanabara.
 
-Este curso feito em vídeo-aulas através do site [YouTube](https://www.youtube.com/@CursoemVideo), mas se por ventura for necessário a emissão de Certificado, será preciso se cadastrar no site [Curso em Vídeo](https://www.cursoemvideo.com/).
+Este curso feito em vídeo-aulas através do site [YouTube](https://www.youtube.com/@CursoemVideo), mas se por ventura for necessário a emissão de Certificado, será preciso se cadastrar no site [Curso em Vídeo](https://www.cursoemvideo.com/), assistir as aulas e fazer o teste no final de cada módulo.
 
 _O curso completo de HTML5 E CSS3 é dividido em 5 módulos._
 
