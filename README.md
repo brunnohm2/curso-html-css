@@ -13,7 +13,8 @@ Meu progresso do curso:
 
 
 ## Anotações
-Aqui deixo algumas anotações sobre o curso conforme vou estudando. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
+> [!NOTE]
+> Aqui deixo algumas anotações sobre o curso conforme vou estudando. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
 
 [Anotações](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
