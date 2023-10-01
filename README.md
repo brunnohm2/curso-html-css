@@ -5,6 +5,7 @@ Este curso feito em vídeo-aulas através do site [YouTube](https://www.youtube.
 
 ## Anotações
 Aqui deixo algumas anotações sobre o curso conforme vou estudando. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
+
 [Anotações](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
 ## Projetos
