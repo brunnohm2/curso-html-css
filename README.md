@@ -14,9 +14,9 @@ Meu progresso do curso:
 
 ## Anotações
 > [!NOTE]
-> Aqui deixo algumas anotações sobre o curso conforme vou estudando. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
+> Aqui deixo algumas anotações sobre o curso. Conforme vou aprendendo, vou fazendo melhorias do mesmo.
 
-[Anotações](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
+[Link](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
 ## Projetos
 Durante o curso é necessário elaborar alguns projetos de sites. Aqui estão os projetos feitos até o momento.
