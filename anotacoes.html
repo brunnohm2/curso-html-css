@@ -279,6 +279,23 @@
                                 <li>Aula 11 - Elemento output em formulários HTML</li>
                             </ul>
                         </li>
+                        <li>
+                            Capítulo 25 - Media Queries
+                            <ul>
+                                <li>Aula 1 - O que são Media Queries</li>
+                                <li>Aula 2 - Criando um site com versão para impressora</li>
+                                <li>Aula 3 - Múltiplas Media Features com CSS</li>
+                                <li>Aula 4 - Seguindo a orientação do dispositivo</li>
+                                <li>Aula 5 - Reunindo tudo em um único CSS</li>
+                                <li>Aula 6 - Mobile First</li>
+                                <li>Aula 7 - Iniciando um site mobile first</li>
+                                <li>Aula 8 - Device breakpoints</li>
+                                <li>Aula 9 - Menu responsivo com HTML5 e CSS3</li>
+                                <li>Aula 10 - Configurando o layout do projeto</li>
+                                <li>Aula 11 - Criando um menu hambúrguer</li>
+                                <li>Aula 12 - Media Queries para outros dispositivos</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -1107,6 +1124,7 @@ img{
 &lt;label for=&quot;i-tenis&quot;&gt;T&ecirc;nis&lt;/label&gt;</code></pre>
 
                 <h3>Aula 9 - <span class="h3-titulo">Elementos color, range e file em HTML</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form006.html</p>
                 <p>Elemento <code>color</code>, faz a seleção da cor desejada através de uma caixa de texto.</p>
 <pre><code class="code-pre">&lt;input
     <strong class="enfase">type=&quot;color&quot;</strong>
@@ -1133,6 +1151,7 @@ img{
 &gt;</code></pre>
 
                 <h3>Aula 10 - <span class="h3-titulo">Select datalist e textarea em HTML</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form007.html</p>
                 <p>Elemento <code>select</code>, usado para selecionar uma lista de valores pre-selecionados. O elemento <code>select</code> é usado junto com <code>option</code>.</p>
 <pre><code class="code-pre">&lt;select name=&quot;Estado&quot; id=&quot;i-estado&quot;&gt;
     &lt;optgroup label=&quot;Regi&atilde;o Norte&quot;&gt;
@@ -1166,6 +1185,7 @@ img{
     &lt;<strong class="enfase">/datalist</strong>&gt;</code></pre>
 
                 <h3>Aula 11 - <span class="h3-titulo">Elemento output em formulários HTML</span></h3>
+                <p class="exercicio">Exercício 25 &gt; form008.html, form009.html e form010.html</p>
                 <p>Tag <code>output</code>, usada apenas para apresentar saídas de informações, ao efetuar o envio do formulário o seu conteúdo não será anexado.</p>
                 <p>Geralmente usa-se a linguagem de programação JavaScript para manipular os valores apresentados no <code>output</code>.</p>
 <pre><code class="code-pre">&lt;form action=&quot;contato.php&quot; method=&quot;get&quot;&gt;
@@ -1250,6 +1270,36 @@ img{
     }
 &lt;/script&gt;
 </strong></code></pre>
+
+                <h2>Capítulo 25 - Media Queries</h2>
+                <h3>Aula 1 - <span class="h3-titulo">O que são Media Queries</span></h3>
+                <p>Media Queries é uma estrutura em CSS que auxilia principalmente no papel da responsividade do site.</p>
+                <p>Sua sintaxe básica:</p>
+<pre><code class="code-pre">@media (condição){
+    /*Estilização CSS*/
+}
+</code></pre>
+
+                <p>Os arquivos que vão ser utilizados nas aulas estão no <a href="https://github.com/gustavoguanabara/html-css/blob/master/exercicios/modulo-04/ex026/pacote-imagens-cap25.zip">link</a>.</p>
+                <p>Após fazer o download do arquivo, descompactar na pasta ex026.</p>
+
+                <h3>Aula 2 - <span class="h3-titulo">Criando um site com versão para impressora</span></h3>
+                <p>Quando importamos os arquivos CSS para o HTML podemos fazer da seguinte maneira:</p>
+<pre><code class="code-pre">&lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;estilos/tela.css&quot;
+    <strong class="enfase">media=&quot;screen&quot;</strong>
+&gt;
+&lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;estilos/impressora.css&quot;
+    <strong class="enfase">media=&quot;print&quot;</strong>
+&gt;</code></pre>
+                <p>No exemplo acima, existe dois elementos <code>media</code> com valores <code>screen</code> e <code>print</code>, onde o primeiro será carregado especificamente para a tela do navegador e o outro será carregado quando for imprimir a página.</p>
+
+                <p>Existem dois tipo de media, as medias Type e as medias Features. O exemplo abordado acima são classificadas com media Type</p>
+
+                <h3>Aula 3 - <span class="h3-titulo">Múltiplas Media Features com CSS</span></h3>
             </article>
         </section>
     </main>
