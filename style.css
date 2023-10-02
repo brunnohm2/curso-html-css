@@ -210,4 +210,5 @@ blockquote{
     padding: 10px;
     border-left: 5px solid var(--cor1);
     background-color: #363636;
+    border-radius: 3px;
 }
