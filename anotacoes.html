@@ -1275,15 +1275,16 @@ img{
                 <h3>Aula 1 - <span class="h3-titulo">O que são Media Queries</span></h3>
                 <p>Media Queries é uma estrutura em CSS que auxilia principalmente no papel da responsividade do site.</p>
                 <p>Sua sintaxe básica:</p>
-<pre><code class="code-pre">@media (condição){
+                <pre><code class="code-pre">@media (condição){
     /*Estilização CSS*/
 }
 </code></pre>
 
                 <p>Os arquivos que vão ser utilizados nas aulas estão no <a href="https://github.com/gustavoguanabara/html-css/blob/master/exercicios/modulo-04/ex026/pacote-imagens-cap25.zip">link</a>.</p>
                 <p>Após fazer o download do arquivo, descompactar na pasta ex026.</p>
-
+                
                 <h3>Aula 2 - <span class="h3-titulo">Criando um site com versão para impressora</span></h3>
+                <p class="exercicio">Exercício 26 &gt; mq001/index.html</p>
                 <p>Quando importamos os arquivos CSS para o HTML podemos fazer da seguinte maneira:</p>
 <pre><code class="code-pre">&lt;link
     rel=&quot;stylesheet&quot;
@@ -1302,6 +1303,7 @@ img{
                 </blockquote>
 
                 <h3>Aula 3 - <span class="h3-titulo">Múltiplas Media Features com CSS</span></h3>
+                <p class="exercicio">Exercício 26 &gt; mq002/index.html</p>
                 <blockquote>
                     <p><strong>Media Query</strong> = Media Types + Media Feature.</p>
                     <p><strong>Media Types</strong> são tipos de media.</p>
@@ -1313,20 +1315,65 @@ img{
     href=&quot;estilos/style.css&quot; 
     <strong class="enfase">media=&quot;all&quot;</strong>
 &gt;
+
 &lt;link 
     rel=&quot;stylesheet&quot; 
     href=&quot;estilos/retrato.css&quot; 
     <strong class="enfase">media=&quot;screen and (orientation:portrait)&quot;</strong>
 &gt;
+
 &lt;link 
     rel=&quot;stylesheet&quot; 
     href=&quot;estilo/paisagem.css&quot; 
     <strong class="enfase">media=&quot;screen and (orientation:landscape)&quot;</strong>
-&gt;
-    </code></pre>
+&gt;</code></pre>
+    
+    <p><code>media=&quot;all&quot;</code> quer dizer que são para todos os tipos de medias</p>
+    <p><code>media=&quot;screen and (orientation:portrait)&quot;</code> screen é o tipo de media e (orientation:portrait) é a caraterística da media em retrato.</p>
 
-                <p><code>media=&quot;all&quot;</code> quer dizer que são para todos os tipos de medias</p>
-                <p><code>media=&quot;screen and (orientation:portrait)&quot;</code> screen é o tipo de media e (orientation:portrait) é a caraterística da media em retrato.</p>
+                <h3>Aula 4 - <span class="h3-titulo">Seguindo a orientação do dispositivo</span></h3>
+                <p class="exercicio">Exercício 26 &gt; mq002/index.html (adicionando aquivos CSS)</p>
+                <p>Nesta aula foi feita na prática a implementação da Media Query, onde foi usada uma imagem de fundo (formato retrato) para a  <ruby>screen<rt>Media Type</rt></ruby> em <ruby>(orientation:portrait)<rt>Media Feature</rt></ruby> e outra imagem (formato paisagem) para <ruby>screen<rt>Media Type</rt></ruby> em <ruby>(orientation:landscape)<rt>Media Feature</rt></ruby></p>
+
+                <h3>Aula 5 - <span class="h3-titulo">Reunindo tudo em um único CSS</span></h3>
+                <p class="exercicio">Exercício 26 &gt; mq003/index.html</p>
+                <p>Nesta aula mostra como fazer as medias queries em um único arquivo CSS.</p>
+<pre><code class="code-pre">&lt;style&gt;
+    /* Declara&ccedil;&otilde;es Gerais */
+    <strong class="enfase">@media all</strong>{
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html,body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        h1{
+            color: white;
+            text-shadow: 3px 3px 0px #1526a7;
+            padding: 10px;
+        }
+    }
+    /* Declara&ccedil;&otilde;es Retrato */
+    <strong class="enfase">@media screen and (orientation:portrait)</strong>{
+        body{
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center bottom;
+        }
+    }
+    /* Declara&ccedil;&otilde;es Paisagem */
+    <strong class="enfase">@media screen and (orientation:landscape)</strong>{
+        body{
+            background-image: url(../imagens/cev-landscape.jpg);
+            background-position: left bottom;
+        }
+    }
+&lt;/style&gt;</code></pre>
             </article>
         </section>
     </main>
