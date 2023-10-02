@@ -1297,9 +1297,36 @@ img{
 &gt;</code></pre>
                 <p>No exemplo acima, existe dois elementos <code>media</code> com valores <code>screen</code> e <code>print</code>, onde o primeiro será carregado especificamente para a tela do navegador e o outro será carregado quando for imprimir a página.</p>
 
-                <p>Existem dois tipo de media, as medias Type e as medias Features. O exemplo abordado acima são classificadas com media Type</p>
+                <blockquote>
+                    <p>Existem dois tipo de media, as medias <strong>Types</strong> e as medias <strong>Features</strong>. O exemplo abordado acima são classificadas com media Type.</p>
+                </blockquote>
 
                 <h3>Aula 3 - <span class="h3-titulo">Múltiplas Media Features com CSS</span></h3>
+                <blockquote>
+                    <p><strong>Media Query</strong> = Media Types + Media Feature.</p>
+                    <p><strong>Media Types</strong> são tipos de media.</p>
+                    <p><strong>Media Feature</strong> são característica de media.</p>
+                </blockquote>
+                <p>Analisando o código abaixo:</p>
+<pre><code class="code-pre">&lt;link
+    rel=&quot;stylesheet&quot; 
+    href=&quot;estilos/style.css&quot; 
+    <strong class="enfase">media=&quot;all&quot;</strong>
+&gt;
+&lt;link 
+    rel=&quot;stylesheet&quot; 
+    href=&quot;estilos/retrato.css&quot; 
+    <strong class="enfase">media=&quot;screen and (orientation:portrait)&quot;</strong>
+&gt;
+&lt;link 
+    rel=&quot;stylesheet&quot; 
+    href=&quot;estilo/paisagem.css&quot; 
+    <strong class="enfase">media=&quot;screen and (orientation:landscape)&quot;</strong>
+&gt;
+    </code></pre>
+
+                <p><code>media=&quot;all&quot;</code> quer dizer que são para todos os tipos de medias</p>
+                <p><code>media=&quot;screen and (orientation:portrait)&quot;</code> screen é o tipo de media e (orientation:portrait) é a caraterística da media em retrato.</p>
             </article>
         </section>
     </main>

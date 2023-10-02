@@ -205,3 +205,9 @@ footer{
         background-color: var(--cor5);
     }
 }
+blockquote{
+    margin: 20px;
+    padding: 10px;
+    border-left: 5px solid var(--cor1);
+    background-color: #363636;
+}
