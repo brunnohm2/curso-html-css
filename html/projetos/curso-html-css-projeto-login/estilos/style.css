@@ -40,7 +40,8 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 
-    transition: width var(--time), heigth var(--time);
+    transition: width var(--time), height var(--time);
+    transition-timing-function:ease-in-out;
 }
 section#login>div#imagem{
     display: block;

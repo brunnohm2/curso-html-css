@@ -9,6 +9,9 @@
 - Grandes Telas: acima de 1.200px
 */
 @media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
     section#login{
         transition: var(--time);
         width: 90vw;
@@ -18,13 +21,15 @@
         width: 50%;
         height: 100%;
     }
-    
     section#login>div#formulario{
         float: right;
         width: 50%;
     }
 }
 @media screen and (min-width:992px){
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
     section#login{
         transition: var(--time);
         width: 990px;
