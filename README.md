@@ -19,7 +19,7 @@ _O curso completo de HTML5 E CSS3 é dividido em 5 módulos._
 [Link](https://brunnohm2.github.io/curso-html-css/anotacoes.html)
 
 ## Projetos :desktop_computer:
-Durante o curso é necessário elaborar alguns projetos de sites. Aqui estão os projetos feitos até o momento.
+_Durante o curso é necessário elaborar alguns projetos de sites. Aqui estão os projetos feitos até o momento._
 
 [Projeto Android](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-android/): Site criado para apresentar a história do android, utilizando o HTML5 e CSS3 na visão de criar um site responsivo, que se ajuste conforme a largura do navegador.
 
