@@ -26,3 +26,5 @@ Durante o curso é necessário elaborar alguns projetos de sites. Aqui estão os
 [Projeto Cordel](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-cordel/): Site elaborado para apresentar a poesia "Cordel Moderno - Tecnologia do agora" de autoria de Milton Duarte. Na elaboração do site estruturamos o HTML utilizando as tags semântica, o CSS localizado em arquivo separado, aplicamos fontes para melhor apresentação da poesia e foi utilizado imagens de fundo para criar um efeito Parallax.
 
 [Projeto Social](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-social/): Projeto cuja sua finalidade é apresentar as redes sociais fazendo a utilização de iframes.
+
+[Projeto Tela de Login](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-login/) Em andamento...
