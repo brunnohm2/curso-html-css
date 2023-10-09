@@ -8,7 +8,7 @@ _O curso completo de HTML5 E CSS3 é dividido em 5 módulos._
 - [x] Módulo 1 :+1:
 - [x] Módulo 2 :+1:
 - [x] Módulo 3 :+1:
-- [ ] Módulo 4 :hourglass:	
+- [x] Módulo 4 :+1:	
 - [ ] Módulo 5 :hourglass:	
 
 
@@ -27,4 +27,4 @@ _Durante o curso é necessário elaborar alguns projetos de sites. Aqui estão o
 
 [Projeto Social](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-social/): Projeto cuja sua finalidade é apresentar as redes sociais fazendo a utilização de iframes.
 
-[Projeto Tela de Login](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-login/): Em andamento...
+[Projeto Tela de Login](https://brunnohm2.github.io/curso-html-css/html/projetos/curso-html-css-projeto-login/): Projeto de site que se adapta conforme o tamanho da tela do dispositivo.
