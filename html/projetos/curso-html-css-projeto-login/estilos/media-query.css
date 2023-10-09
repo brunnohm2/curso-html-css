@@ -13,8 +13,8 @@
         background-image: linear-gradient(to top, var(--verde), var(--lilas));
     }
     section#login{
-        transition: var(--time);
         width: 90vw;
+        height: 280px;
     }
     section#login>div#imagem{
         float: left;
@@ -31,8 +31,8 @@
         background-image: linear-gradient(to top, var(--verde), var(--lilas));
     }
     section#login{
-        transition: var(--time);
         width: 990px;
+        height: 270px;
     }
     section#login>div#imagem{
         float: right;
