@@ -9,7 +9,7 @@ _O curso completo de HTML5 E CSS3 é dividido em 5 módulos._
 - [x] Módulo 2 :+1:
 - [x] Módulo 3 :+1:
 - [x] Módulo 4 :+1:	
-- [ ] Módulo 5 :hourglass:	
+- [ ] Módulo 5 :hourglass:	aguardando o lançamento módulo.
 
 
 ## Anotações :books:
